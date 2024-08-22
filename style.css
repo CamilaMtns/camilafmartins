@@ -1,0 +1,382 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #dad0ac 0%, #e8a390 100%);
+    color: #333;
+}
+
+/* Estilizando o cabeçalho geral */
+header {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Transforma os itens da lista em flex items */
+    justify-content: flex-end; /* Alinha os itens para o final da linha */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000; /* Cor do texto dos links */
+    background-color: #ffffff; /* Cor de fundo dos botões */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+nav a:hover {
+    background-color: #FF0102; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando a aba inicial */
+.hero {
+    background-color: linear-gradient(120deg, #dad0ac 0%, #e8a390 100%);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.text-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ru-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF0102;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-content {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+.logo-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilizando a aba sobre mim */
+.sobre-mim {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eee;
+}
+
+.sobre-mim h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FF0102;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.sobre-mim p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.hobbies {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hobbies h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF0102;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hobby {
+    background-color: #fff;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.hobby img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b777;
+}
+
+/* Estilizando a aba formação acadêmica */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.formacao-academica {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.formacao-academica h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.formacao {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.formacao-info {
+    flex: 1;
+}
+
+.formacao-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #000;
+    
+}
+
+.formacao-info p {
+    margin: 5px 0;
+}
+
+.data {
+    font-weight: bold;
+    color: #FF0102;
+}
+
+.idiomas {
+    width: 300px;
+}
+
+.idiomas h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.idioma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 20px;
+}
+
+/* Estilizando a aba portfólio */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.portfolio-item {
+    background: transparent; /* Fundo transparente */
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-item::before,
+.portfolio-item::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.portfolio-item::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.portfolio-item::after {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+}
+
+.portfolio-item h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.portfolio-item p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    z-index: 1;
+    position: relative;
+}
+
+.access-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #c9c0c0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.access-button:hover {
+    background-color: #FF0102;
+    transform: translateY(-2px);
+}
+
+.access-button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+/* Estilizando a aba contato */
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+.contact-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #c9c0c0;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #FF0102;
+}
